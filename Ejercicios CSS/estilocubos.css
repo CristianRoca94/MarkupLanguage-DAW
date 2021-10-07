@@ -1,0 +1,10 @@
+body{
+background-color: brown;
+}
+
+.wrapper{
+    align-self: center;
+    width: 900px;
+    height: 700px;
+    background: rgb(1, 238, 255);
+}
