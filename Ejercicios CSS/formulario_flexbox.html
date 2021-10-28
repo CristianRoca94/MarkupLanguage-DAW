@@ -7,39 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
-        .flexcontainer{
-           display: flex;
-           background-color: grey;
-           flex-direction: column;
-           justify-content: center;
-
+        .flexcontainer {
+            display: flex;
+            background-color: grey;
+            flex-direction: column;
+            justify-content: center;
+            
         }
+
+        .linea {
+            margin: 0px 20px;
+            width: 90px;
+            border-top: 1px solid #999;
+            position: relative;
+            top: 10px;
+            float: left;
+        }
+
+        .leyenda {
+            float: left;
+        }
+
+        .botonCrear{
+            background-color: rgb(103, 117, 117);
+            transition: background-color .5s;
+        }
+
+        .botonCrear:hover{
+            background-color: green;
+        }
+
     </style>
 </head>
 
-<body style="background-color: azure;>
-    <div class="flex-container">
-        <div>
-            <div class="login">
-                <div class="logo">
-                    <img src="https://plaiaundi.hezkuntza.net/image/layout_set_logo?img_id=116817" alt="Logo plaiaundi">
-                </div>
-                <div class="username">
-
-                </div>
-                <div class="password">
-
-                </div>
+<body style="background-color: rgb(103, 117, 117);>
+    <div class=" flex-container">
+    <div>
+        <div id="login">
+            <div id="logo">
+                <img src="https://plaiaundi.hezkuntza.net/image/layout_set_logo?img_id=116817" alt="Logo plaiaundi">
             </div>
-
-
-
-
-
-
+            <div id="username">
+                <p>username o email: <br><input type="text" name="usuario" </p>
+            </div>
+            <div id="password">
+                <p> password: <br><input type="password" name="pass" </p>
+            </div>
+            <button class="botonEntrar" type="Entrar">Entrar</button>
+        </div>
+        <div id="loginoptions">
+            <br>
+            ¿Olvidaste el password?
+            <br><br>
+            Sign In con el email de la escuela
+            <br><br>
+            <div style="width:400px;margin:auto;">
+                <div class="linea">&nbsp;</div>
+                <div class="leyenda">usuarios sin cuenta</div>
+                <div class="linea">&nbsp;</div>
+                </div>
+                <br><br>
+                <button class="botonCrear">Crear una cuenta</button>
 
         </div>
+    </div>
     </div>
 
 </body>
