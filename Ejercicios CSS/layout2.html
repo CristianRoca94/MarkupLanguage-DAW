@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      width: 800px;
+      height: 800px;
+      margin: 20px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      grid-gap: 10px;
+      position: absolute;
+      top: 10%;
+      left: 28%;
+      margin-right: -50%;
+      background-color: #DBEDF3;
+    }
+    .two {
+      grid-column: 3 / 4;
+      grid-row: 1;
+      background: linear-gradient(to bottom, #a1bfd4 0%, #6d8094 100%);
+    }
+
+    .four {
+      width: 620px;
+      height: 620px;
+      margin: 20px;
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      grid-gap: 10px;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+      margin-right: -50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="two">uno</div>
+    <div class="four">dos</div>
+  </div>
+</body>
+
+</html>
