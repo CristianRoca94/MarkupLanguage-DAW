@@ -1,121 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+›<!DOCTYPE html>
+ <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con Media Query</title>
-    <style>
-        body {
-            background-color: rgb(154, 163, 163);
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Formulario con Media Query</title>
+     <style>
+         body {
+             background-color: rgb(154, 163, 163);
+         }
 
-        }
+         //Contenedor de flex-box
+         @media (min-width: 700px) {
+             .flex-container
 
-        @media (min-width: 700px) {
-            .flex-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                background-color: rgb(154, 163, 163);
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
+         {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-around;
+             background-color: rgb(154, 163, 163);
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
 
-            .Izquierda {
-                flex: 4;
-            }
+         .Izquierda {
+             flex: 4;
+         }
 
-            .Derecha {
-                flex: 6;
-                background-image: url("https://img.besthqwallpapers.com/Uploads/29-7-2020/138551/gray-texture-gray-stone-background-black-texture-gray-background-stylish-gray-texture.jpg");
-                
+         .Derecha {
+             flex: 6;
+             background-image: url("https://img.besthqwallpapers.com/Uploads/29-7-2020/138551/gray-texture-gray-stone-background-black-texture-gray-background-stylish-gray-texture.jpg");
+         }
 
-            }
+         .botonSignup {
+             background-color:green;
+         }
 
-            .botonSignup {
-                background-color: green;            
-            }
+             .botonSignup:hover {
+                 background-color: rgb(11, 187, 11);
+                 transition: background-color .5s;
+             }
 
-            .botonSignup:hover {
-                background-color: rgb(11, 187, 11);                
-                transition: background-color .5s;
-            }
-
-        }
-
-
-        .linea {
-            margin: 0px 20px;
-            width: 90px;
-            border-top: 1px solid #999;
-            position: relative;
-            top: 10px;
-            float: left;
-        }
-
-        .leyenda {
-            float: left;
-        }
-
-        .botonCrear {
-            background-color: rgb(154, 163, 163);
-
-        }
-
-        .botonCrear:hover {
-            background-color: rgb(209, 221, 221);;
-            transition: background-color .5s;
-        }
+         }
 
 
-        .botonEntrar {
-            background-color: green;
-                            
-        }
+         .linea {
+             margin: 0px 20px;
+             width: 90px;
+             border-top: 1px solid #999;
+             position: relative;
+             top: 10px;
+             float: left;
+         }
 
-        .botonEntrar:hover {
-            background-color: rgb(11, 187, 11);
-            transition: background-color .5s;
-        }
-    </style>
-</head>
+         .leyenda {
+             float: left;
+         }
 
-<body>
-    <div class="flex-container">
-        <div class="Izquierda">
-            <div id="login">
-                <div id="logo">
-                    <img src="https://plaiaundi.hezkuntza.net/image/layout_set_logo?img_id=116817" alt="Logo plaiaundi">
-                </div>
-                <div id="username">
-                    <p>username o email: <br><input type="text" name="usuario" </p>
-                </div>
-                <div id="password">
-                    <p> password: <br><input type="password" name="pass" </p>
-                </div>
-                <button class="botonEntrar" type="Entrar">Entrar</button>
-            </div>
-            <div id="loginoptions">
-                <br>
-                ¿Olvidaste el password?
-                <br><br>
-                Sign In con el email de la escuela
-                <br><br>
-                <div style="width:400px;margin:auto;">
-                    <div class="linea">&nbsp;</div>
-                    <div class="leyenda">usuarios sin cuenta</div>
-                    <div class="linea">&nbsp;</div>
-                </div>
-                <br><br>
-                <button class="botonCrear">Crear una cuenta</button>
-            </div>
-        </div>
-        <div class="Derecha">
-            <p>Aprende desarrollo Web</p>
-            <button class="botonSignup">Matricúlate en DAW</button>
-        </div>
-    </div>
+         .botonCrear {
+             background-color: rgb(154, 163, 163);
+         }
 
-</body>
+         //Acción realizada cuando el cursor está encima del botón
+         .botonCrear:hover {
+             background-color: rgb(209, 221, 221);
+             ;
+             transition: background-color .5s;
+         }
 
-</html>
+
+         .botonEntrar {
+             background-color: green;
+         }
+
+             .botonEntrar:hover {
+                 background-color: rgb(11, 187, 11);
+                 transition: background-color .5s;
+             }
+     </style>
+ </head>
+ <body>
+     <div class="flex-container">
+         <div class="Izquierda">
+             <div id="login">
+                 <div id="logo">
+                     <img src="https://plaiaundi.hezkuntza.net/image/layout_set_logo?img_id=116817" alt="Logo plaiaundi">
+                 </div>
+                 <div id="username">
+                     <p>username o email: <br><input type="text" name="usuario" </p>
+                 </div>
+                 <div id="password">
+                     <p> password: <br><input type="password" name="pass" </p>
+                 </div>
+                 <button class="botonEntrar" type="Entrar">Entrar</button>
+             </div>
+             <div id="loginoptions">
+                 <br>
+                 ¿Has olvidado la contraseña?
+                 <br><br>
+                 Iniciar sesión con el email de la escuela
+                 <br><br>
+                 <div style="width:400px;margin:auto;">
+                     <div class="linea">&nbsp;</div>
+                     <div class="leyenda">Usuarios sin cuenta</div>
+                     <div class="linea">&nbsp;</div>
+                 </div>
+                 <br><br>
+                 <button class="botonCrear">Crear una cuenta</button>
+             </div>
+         </div>
+         <div class="Derecha">
+             <p>Aprende desarrollo Web</p>
+             <button class="botonSignup">Matricúlate en Desarrolo de Aplicaciones Web</button>
+         </div>
+     </div>
+
+ </body>
+
+ </html>
